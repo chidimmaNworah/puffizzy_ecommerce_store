@@ -35,6 +35,18 @@ export default {
             name: 'details',
             title: 'Details',
             type: 'string',
-        }
+        },
+        {
+            name: 'tags',
+            title: 'Tags',
+           type:'array',
+           of: [
+             {
+               name:'tag',
+               title:'Tag',
+               type:'string'
+             }
+           ]
+          },
     ]
 }

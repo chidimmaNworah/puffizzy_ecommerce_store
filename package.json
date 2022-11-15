@@ -14,12 +14,15 @@
     "@sanity/image-url": "^1.0.1",
     "@stripe/stripe-js": "^1.42.1",
     "canvas-confetti": "^1.6.0",
+    "framer-motion": "^7.6.5",
     "next": "13.0.2",
     "next-sanity-image": "^5.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-gtm-module": "^2.0.11",
     "react-hot-toast": "^2.4.0",
     "react-icons": "^4.6.0",
+    "sass": "^1.56.1",
     "stripe": "^10.16.0"
   },
   "devDependencies": {

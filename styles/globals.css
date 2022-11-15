@@ -103,11 +103,10 @@ width: 100%;
   width: 100%;
 }
 .product-card{
- cursor: pointer;
+  cursor: pointer;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
- color: #324d67;
-
+  color: #324d67;
 }
 .product-card:hover{
   transform: scale(1.1,1.1)
@@ -121,6 +120,7 @@ width: 100%;
 
 .product-name{
   font-weight: 500;
+
 }
 .product-price{
   font-weight: 800;
@@ -212,7 +212,7 @@ text-align: end;
 }
 .footer-banner-container{
   padding: 100px 40px;
-  background-color: #f02d34;
+  /* background-color: #f02d34; */
   border-radius: 15px;
   position: relative;
   height: 400px;
@@ -220,6 +220,11 @@ text-align: end;
   color: white;
   width: 100%;
   margin-top: 120px;
+
+  background-image: url("../public/footer_hero_background-02.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .banner-desc{
   display: flex ;
@@ -760,4 +765,84 @@ margin-top: 160px;
   width: 300px;
   margin: auto;
 }
+}
+
+/* item category list */
+.product_filter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 4rem 0 2rem;
+}
+
+.product_filter-item{
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: #000;
+  font-weight: 800;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+}
+
+.product_filter-item:hover{
+  background-color: #f02d34;
+  color: #fff;
+}
+
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-text {
+  font-size: 0.8rem;
+  text-align: left;
+  color: #6b7688;
+  line-height: 1.5;
+}
+
+.item-active {
+  background-color: #f02d34;
+  color: #fff;
+}
+
+@media screen and (min-width: 2000px) {
+  .product_filter-item{
+  padding: 1rem 2rem;
+  border-radius: 0.85rem;
+  }
+
+  .p-text {
+    font-size: 1.75rem;
+  }
+}
+
+/* Pagination */
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.pagination-list{
+  display: flex;
+  list-style: none;
+}
+.page-item{
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  list-style: none;
+  display: inline;
+}
+.page-link{
+  background-color: #f02d34;
+  padding: 12px;
+  border-radius: 15%;
 }
