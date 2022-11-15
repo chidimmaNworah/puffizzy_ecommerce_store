@@ -8,10 +8,10 @@ import { StateContext } from '../context/StateContext'
 
 function MyApp({ Component, pageProps }) {
 
-  // const gtmId = process.env.NEXT_PUBLIC_GTM_ID || "";
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
 
   const tagManagerArgs = {
-    gtmId: 'GTM-TXSTN4H'
+    gtmId
   }
 
   useEffect(() => {
